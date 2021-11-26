@@ -14,4 +14,9 @@ Demo app for fulltext and streamlit.
   - 文字列がないファイルとの見分けがつかない
 
 ## streamlit ( https://streamlit.io/ )
-フロントをPythonで手軽に実装できるライブラリ。本アプリはstreamlitのクラウドを使ってデプロイしている ( https://docs.streamlit.io/streamlit-cloud )
+フロントをPythonで手軽に実装できるライブラリ。
+
+### デプロイ
+デモアプリとしてはstreamlitのクラウド( https://docs.streamlit.io/streamlit-cloud )を使ってデプロイしています。
+
+→ https://share.streamlit.io/ikokobi/fulltext-demo-app
