@@ -1,2 +1,0 @@
-streamlit
-git+https://github.com/beatrust/fulltext
