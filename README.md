@@ -1,2 +1,2 @@
-# fulltext-sample-app
-Sample app for fulltext and streamlit.
+# fulltext-demo-app
+Demo app for fulltext and streamlit.
