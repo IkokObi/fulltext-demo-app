@@ -7,6 +7,8 @@ from typing import Optional
 import fulltext
 import streamlit as st
 
+st.set_page_config(page_title="fulltext-demo", page_icon=":snake:")
+
 # loggerの設定
 level = logging.INFO
 logger = logging.getLogger(__name__)
@@ -23,7 +25,6 @@ if len(logger.handlers) == 0:
     logger.propagate = False
 
 # ページ設定
-st.set_page_config(page_title="fulltext-demo", page_icon=":snake:")
 st.title("文書ファイル読み取りのデモ")
 
 # ファイルのアップロード
