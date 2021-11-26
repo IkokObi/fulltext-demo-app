@@ -5,7 +5,12 @@ import traceback
 from typing import Optional
 
 import fulltext
+import japanize_matplotlib  # For plot with japanese
 import streamlit as st
+from matplotlib import font_manager
+from matplotlib import pyplot as plt
+
+from src.wordcloud import SudachiWordCloud
 
 st.set_page_config(page_title="fulltext-demo", page_icon=":snake:")
 
@@ -23,6 +28,14 @@ if len(logger.handlers) == 0:
     handler.setFormatter(handler_format)
     logger.addHandler(handler)
     logger.propagate = False
+
+
+# 日本語フォントパスの取得
+japanese_font_path = None
+for f in font_manager.fontManager.ttflist:
+    if f.name == "IPAexGothic":
+        japanese_font_path = f.fname
+
 
 # ページ設定
 st.title("文書ファイル読み取りのデモ")
@@ -53,8 +66,19 @@ if uploaded_file is not None:
     max_write = 30
     if result:
         st.success("データの読み取りに成功しました")
-        st.subheader("データの内訳")
+        st.subheader(f"データの内訳（冒頭{max_write}文字が表示されます）")
         st.text(result[:max_write] + (" ...(略)..." if len(result) > max_write else ""))
+
+        st.subheader("ワードクラウド")
+        wordcloud = SudachiWordCloud()
+        tokens = wordcloud.tokenize(texts=result.split())
+        wc = wordcloud.create_word_cloud(tokens=tokens, font_path=japanese_font_path)
+        fig = plt.figure()
+        ax = fig.add_subplot(111)
+        ax.imshow(wc, interpolation="bilinear")
+        ax.axis("off")
+        st.pyplot(fig)
+
         with st.expander("データを全て表示する"):
             st.text(result)
     else:

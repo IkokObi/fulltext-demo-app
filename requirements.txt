@@ -1,2 +1,8 @@
 streamlit
 git+https://github.com/beatrust/fulltext
+japanize-matplotlib
+matplotlib
+pandas
+sudachipy
+sudachidict_core
+wordcloud
