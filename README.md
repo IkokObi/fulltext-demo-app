@@ -21,4 +21,6 @@ Demo app for fulltext and streamlit.
 ### デプロイ
 デモアプリとしてはstreamlitのクラウド( https://docs.streamlit.io/streamlit-cloud )を使ってデプロイしています。
 
+アップロードされたファイルの内訳表示と文章のワードクラウドを作成し、表示します。
+
 → https://share.streamlit.io/ikokobi/fulltext-demo-app
