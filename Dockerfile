@@ -7,5 +7,5 @@ RUN apt-get update \
 
 WORKDIR /root/src
 
-COPY requirements.txt ./
-RUN pip install --upgrade pip && pip install -r requirements.txt
+COPY requirements-docker.txt ./
+RUN pip install --upgrade pip && pip install -r requirements-docker.txt
