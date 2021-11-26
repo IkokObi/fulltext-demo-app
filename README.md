@@ -2,7 +2,9 @@
 Demo app for fulltext and streamlit.
 
 ## fulltext
-本家のリポジトリ(https://github.com/btimby/fulltext)ではExcelに対応していなかったため、fork先(https://github.com/beatrust/fulltext)を利用しています。
+本家のリポジトリではExcelに対応していなかったため、fork先を利用しています。
+- 本家: https://github.com/btimby/fulltext
+- fork先: https://github.com/beatrust/fulltext
 
 ### 既知の未対応ファイル & 怪しい挙動
 - 日本語を含む画像
