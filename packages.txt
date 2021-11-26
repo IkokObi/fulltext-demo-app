@@ -3,4 +3,5 @@ abiword
 unrtf
 poppler-utils
 libjpeg-dev
+tesseract-ocr
 libmagic-dev
