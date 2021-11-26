@@ -1,8 +1,10 @@
 altair==4.1.0
+argcomplete==1.12.3
 argon2-cffi==21.1.0
 astor==0.8.1
 attrs==21.2.0
 backcall==0.2.0
+backports.zoneinfo==0.2.1
 base58==2.1.1
 beautifulsoup4==4.9.3
 bleach==4.1.0
@@ -25,6 +27,8 @@ fulltext @ git+https://github.com/beatrust/fulltext@982c90b4de864f17d42a4b0b7c3a
 gitdb==4.0.9
 GitPython==3.1.24
 idna==2.10
+importlib-metadata==4.8.2
+importlib-resources==5.4.0
 ipykernel==6.5.1
 ipython==7.29.0
 ipython-genutils==0.2.0
@@ -97,3 +101,4 @@ webencodings==0.5.1
 widgetsnbextension==3.5.2
 xlrd==2.0.1
 XlsxWriter==3.0.2
+zipp==3.6.0
