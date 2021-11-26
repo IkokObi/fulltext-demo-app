@@ -19,6 +19,7 @@ st.title("文書ファイル読み取りのデモ")
 
 # ファイルのアップロード
 uploaded_file = st.file_uploader("アップロードするファイルを選んでください")
+st.caption("ファイルはアップロード後に削除されますが、一切の責任は負いません")
 if uploaded_file is not None:
     # fulltextで文字列として読み取る
     result: Optional[str] = None
