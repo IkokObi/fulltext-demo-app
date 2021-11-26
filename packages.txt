@@ -1,0 +1,5 @@
+antiword
+abiword
+unrtf
+poppler-utils
+libjpeg-dev
