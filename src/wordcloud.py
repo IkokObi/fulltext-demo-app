@@ -9,7 +9,7 @@ class SudachiWordCloud(object):
     def __init__(self):
         self.tokenizer_obj = dictionary.Dictionary().create()
         self.mode = tokenizer.Tokenizer.SplitMode.C
-        self.hinshi = ["名詞", "動詞", "形容詞", "形容動詞"]
+        self.hinshi = ["名詞"]
 
     def tokenize(self, texts: List[str]) -> List[str]:
         tokens: List[str] = []
