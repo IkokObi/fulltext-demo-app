@@ -1,7 +1,8 @@
 # fulltext-demo-app
 Demo app for fulltext and streamlit.
 
-![demo](./demo.gif)
+<img src="./demo.gif" width=480>
+
 
 ## fulltext
 本家のリポジトリではExcelに対応していなかったため、fork先を利用しています。
