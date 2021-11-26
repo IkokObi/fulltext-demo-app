@@ -1,6 +1,8 @@
 # fulltext-demo-app
 Demo app for fulltext and streamlit.
 
+![demo](./demo.gif)
+
 ## fulltext
 本家のリポジトリではExcelに対応していなかったため、fork先を利用しています。
 - 本家: https://github.com/btimby/fulltext
